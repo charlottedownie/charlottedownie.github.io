@@ -98,7 +98,7 @@ section.hero {
 
 section.hero > *{
     background-color: rgba(255,99,71,0.8);
-    padding: var(--large-padding));
+    padding: var(--large-padding);
     min-width: var(--body-width);
 }
 
