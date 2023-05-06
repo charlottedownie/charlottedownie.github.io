@@ -1,0 +1,115 @@
+:root {
+    --background:  #0CA789;
+    --background-fade: rgba(0.0471,0.6549,0.5373,0.1);
+
+    --header-height: 3rem:var(--background);
+    --text:#ffffff;
+    --large-padding: 1rem;
+    --small-padding: calc(var(--large-padding)/2);
+    --body-width: 30rem;
+    --hero-height: (var(--body-width));
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+html, body{
+    height: 100vh;
+    font-family: Arial
+}
+
+a, a:hover, a:visited{
+    color: var(--text);
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration:underline
+}
+
+
+body{
+    background-color: var(--background);
+    display: grid;
+    grid-template-rows: var(--header-height) auto var(--header-height);
+    color: var(--text);
+}
+
+body > header{
+    grid-row: 1;
+}
+
+body > main{
+    grid-row: 2;
+}
+
+body > footer{
+    grid-row: 3;
+}
+
+body > main{
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto;
+    min-width: 30rem;
+    max-width: 75%;
+    margin: 0 auto
+
+}
+
+body > header, body > footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--background-fade);
+    padding: var(--large-padding);
+}
+
+body > header .logo{
+    background-color:tomato;
+    padding: var(--small-padding);
+}
+
+body > footer {
+    justify-content: center;
+
+}
+
+body{
+    background-image: url("Session01/assests/background.jpg") ;
+    background-position: 50%;
+}
+
+section.hero {
+    min-height: var(--hero-height) ;
+    padding: var(--large-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    color: white;
+
+}
+
+section.hero > *{
+    background-color: rgba(255,99,71,0.8);
+    padding: var(--large-padding));
+    min-width: var(--body-width);
+}
+
+section.signposts {
+    flex: 1 0 auto;
+    display:grid;
+    grid-template-rows: var(--header-height) auto;
+}
+
+section.signposts > main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap: var(--large-padding);
+}
