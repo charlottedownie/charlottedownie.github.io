@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Page</title>
+  <link href="styles/styles.css" rel="stylesheet">
+  <style>
+    .carousel-container {
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-slide {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+  <script>
+    let slideIndex = 0;
+    let timer;
+
+    document.addEventListener("DOMContentLoaded", function() {
+      showSlides();
+    });
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("carousel-slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].style.display = "block";
+
+      timer = setTimeout(showSlides, 2000); // Change slide every 2 seconds
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">🌹</div>
+    <button class="menu-btn">menu</button>
+  </header>
+  <main>
+    <section class="carousel-container">
+      <div class="carousel-slide">
+        <img src="assets/image1.png" alt="Image 1" />
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/image2.png" alt="Image 2" />
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/image3.png" alt="Image 3" />
+      </div>
+      <div class="carousel-slide">
+        <img src="assets/image4.png" alt="Image 4" />
+      </div>
+    </section>
+    <section>
+      <h1>A Walk in the Park</h1>
+      <p>
+        In Hackney Central, a tale I'll share,<br>
+        Of a furry friend with charm and flair.<br>
+        His name is Bosco, a pup so fine,<br>
+        A Bedlington Terrier with Whippet's line.
+      </p>
+      <p>
+        At just six months, his spirit shines bright,<br>
+        A joyful companion, a pure delight.<br>
+        With a coat so soft, like a cloud it seems,<br>
+        He's a dream come true, beyond our dreams.
+      </p>
+      <p>
+        Bosco, oh Bosco, with eyes so wise,<br>
+        A loyal heart, a soul that flies.<br>
+        In Hackney's streets, he roams and plays,<br>
+        Leaving pawprints in magical ways.
+      </p>
+      <p>
+        He bounds with grace, a swift, agile stride,<br>
+        His energy radiates far and wide.<br>
+        With every leap, he conquers the day,<br>
+        Filling our lives with boundless play.
+      </p>
+      <p>
+        In parks and fields, he frolics and runs,<br>
+        Chasing squirrels under the setting sun.<br>
+        His tail a blur, his spirit untamed,<br>
+        A testament to the love he's gained.
+      </p>
+      <p>
+        From Hackney's heart, to yours he's bound,<br>
+        A faithful friend, always around.<br>
+        Through ups and downs, he's by your side,<br>
+        A source of comfort, a faithful guide.
+      </p>
+      <p>
+        Bosco, dear Bosco, may your days be blessed,<br>
+        With love and laughter, never suppressed.<br>
+        In Hackney's embrace, may you always find,<br>
+        Joy and adventure, forever entwined.
+      </p>
+      <p>
+        So here's to Bosco, the pup so grand,<br>
+        A true companion, a cherished band.<br>
+        May your journey together be filled with glee,<br>
+        Forever united, in love's sweet decree.
+      </p>
+    </section>
+    <section>
+      <h1>About Me</h1>
+      <p><a href="index.html">Back to Home</a></p>
+    </section>
+  </main>
+  <footer>
+    <nav class="nav">
+      <a href="newpage.html">Background</a>
+      <a href="http://www.google.com">Work</a>
+      <a href="http://www.google.com">Contact</a>
+    </nav>
+  </footer>
+</body
