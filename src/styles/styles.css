@@ -8,6 +8,21 @@
     --body-width: 30rem;
   }
   
+.menu-btn {
+    background-color: #0ca788;
+}
+.menu {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn.active + .menu {
+    display: block;
+  }
+
   .logo {
     display: flex;
     justify-content: center;
