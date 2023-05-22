@@ -12,12 +12,12 @@
     background-color: #0ca788;
 }
 .menu {
-    display: none;
-  }
+  display: none;
+}
 
-  .menu-btn {
-    display: block;
-  }
+.menu.show {
+  display: block;
+}
 
   .menu-btn.active + .menu {
     display: block;
@@ -243,3 +243,27 @@
     max-height: 100%;
     object-fit: contain;
   }
+
+  .carousel-container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .carousel-slide {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  

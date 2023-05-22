@@ -7,16 +7,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital@0;1&family=Josefin+Sans&family=Montserrat:wght@600&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
 <title>About Me</title>
     <link href= "styles/styles.css" rel="stylesheet" />
+  <script src="script.js"></script>
   </head>
   
   <body>
     <header>
       <div class="logo"><a href="index.html">🌹</a></div>
-      <button class="menu-btn">Menu</button>
-      <div class="menu">
+      <button class="menu-btn" onclick="toggleMenu()">Menu</button>
+      <div class="menu" id="menu">
         <a href="index.html">Home</a>
         <a href="newpage.html">Poem</a>
-      </div>
+      </div>      
+      
     </header>
     <main>
       <section class="about-me">
@@ -48,7 +50,7 @@
       <section class="image-section">
         <div class="image-container">
           <div class="transparent-box">
-            <h2 class="image-text">I hold a Master's degree in Chemical Engineering from the University of Edinburgh, as well as doing a year abroad at UNSW, Sydney. Despite my technical background, I have always nurtured a creative flair which I like to show through cooking. Therefore, my aspiration is to channel my technical expertise and artistic inclination towards web development. I aim to utilize my skills to support my creative peers by building exceptional websites and more.</h2>
+            <h2 class="image-text">My owner is Charlotte, who loves to cook colourful meals and look after me. </h2>
           </div>
           <img src="assets/Cooking.png" alt="Photo of Charlotte cooking" width="500" height="700" />
           <img src="assets/Veg.png" alt="Photo of Fruit and Veg" width="500" height="700" />
